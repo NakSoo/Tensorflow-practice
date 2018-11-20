@@ -1,3 +1,19 @@
 
 .ipynb_checkpoints/04-checkpoint.ipynb
 .ipynb_checkpoints/05-checkpoint.ipynb
+.ipynb_checkpoints/06-checkpoint.ipynb
+.ipynb_checkpoints/07-checkpoint.ipynb
+.ipynb_checkpoints/08-checkpoint.ipynb
+.ipynb_checkpoints/09-checkpoint.ipynb
+.ipynb_checkpoints/10-checkpoint.ipynb
+checkpoint
+logs/events.out.tfevents.1542341789.DESKTOP-EHNQLHB
+logs/events.out.tfevents.1542342343.DESKTOP-EHNQLHB
+mnist/data/t10k-labels-idx1-ubyte.gz
+mnist/data/train-images-idx3-ubyte.gz
+mnist/data/t10k-images-idx3-ubyte.gz
+mnist/data/train-labels-idx1-ubyte.gz
+model.dnn.ckpt-100.index
+model.dnn.ckpt-100.data-00000-of-00001
+model.dnn.ckpt-100.index.tempstate12335778631019237666
+model.dnn.ckpt-100.meta
