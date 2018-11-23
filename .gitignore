@@ -17,3 +17,8 @@ model.dnn.ckpt-100.index
 model.dnn.ckpt-100.data-00000-of-00001
 model.dnn.ckpt-100.index.tempstate12335778631019237666
 model.dnn.ckpt-100.meta
+AI Project/.ipynb_checkpoints/Tensorflow_batch_normalization-checkpoint.ipynb
+AI Project/mnist/data/t10k-images-idx3-ubyte.gz
+AI Project/mnist/data/t10k-labels-idx1-ubyte.gz
+AI Project/mnist/data/train-images-idx3-ubyte.gz
+AI Project/mnist/data/train-labels-idx1-ubyte.gz
