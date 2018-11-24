@@ -47,7 +47,9 @@ class Network:
 
         # Standardize random weights
         # np.random.seed(0)
-        hidden_layer = np.random.rand(self.num_hidden, self.input_size + 1) / self.num_hidden #여기서 300X785의 히든층 생성
+        #여기서 300X785의 히든층 생성
+        #뒤에 num_hidden으로 나누어서 최대한 작게 만들기
+        hidden_layer = np.random.rand(self.num_hidden, self.input_size + 1) / self.num_hidden 
         output_layer = np.random.rand(self.output_size, self.num_hidden + 1) / self.output_size
         self.layers = [hidden_layer, output_layer]
         self.iteration = 0.
@@ -60,13 +62,15 @@ class Network:
         print('Network training with '+str(batchsize)+' examples')
         print('Until convergence (10 iterations without improvements)')
         print('-----')
+        #600X784배열 새성
         inputs = training[0][0:batchsize] #배치 사이즈 만큼 데이터를 가져감
-        targets = np.zeros((batchsize, 10))
+        targets = np.zeros((batchsize, 10)) #결과 배열
         for i in range(batchsize):
             targets[i, training[1][i]] = 1
 
         # Performs iterations
         while self.same < 10:
+            #입력, 결과 묶어주기
             for input_vector, target_vector in zip(inputs, targets):
                 self.backpropagate(input_vector, target_vector)
             # Messages and backups
